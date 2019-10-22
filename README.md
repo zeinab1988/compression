@@ -1,7 +1,7 @@
 # compression
 A Fast Reference Free Genome Compression using Deep Neural Networks
 1. Execute this command:
-   wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR494/SRR494099/SRR4
+   wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR494/SRR494099/SRR494099.fastq.gz
 2. Prepare the dataset with this command:
    zcat SRR494099.fastq.gz | awk 'NR%4==2{print}' | grep -v ">" | tr -d -c "ACGT" > SEQ.txt
 3. Put the "SEQ.txt" file in your directory.
