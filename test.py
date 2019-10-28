@@ -50,7 +50,7 @@ if k==0:
 else:
   R=(w)/k
 model = keras.models.load_model('auto-encoder')
-score = model.evaluate(x=data_test, y=data_test, batch_size=100000, verbose=1)
+score = model.evaluate(x=data_test, y=data_test, batch_size=20000, verbose=1)
 print('compression loss:', score[0])
 print('compression accuracy:', score[1])
 print('compression ratio:',R)
