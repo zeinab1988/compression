@@ -5,10 +5,13 @@ import os.path
 from os import path
 #import matplotlib.pyplot as plt
 import keras
+import platform
 v='3.6.2'
-if v==platform.python_version():
-    raise Exception("Must be using the same versions of python")
+pv=platform.python_version()
+if v!=pv:
+    raise Exception("Must use the 3.6.2 version of python")
     exit()
+
 w=15
 seq=""
 if path.exists('SEQ.txt'):
