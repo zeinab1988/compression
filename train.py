@@ -8,6 +8,10 @@ from keras import optimizers
 import time
 import os.path
 from os import path
+v='3.6.2'
+if v==platform.python_version():
+    raise Exception("Must be using the same versions of python")
+    exit()
 epoches =2
 batch_size =7000
 w=15
